@@ -1,7 +1,7 @@
 package ru.geekbrains.fruitbox.app;
 
 public abstract class Fruit {
-    private float weight;
+    float weight;
 
     public float getWeight() {
         return weight;

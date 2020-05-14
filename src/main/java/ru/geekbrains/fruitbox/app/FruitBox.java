@@ -26,9 +26,14 @@ public class FruitBox<T extends Fruit> {
     }
 
     public void pourIntoAnotherBox(FruitBox<T> anotherBox) {
-        for (T fruit:box) {
-            anotherBox.add(fruit);
+        if (this == anotherBox) {
+            return;
         }
+//        for (T fruit:box) {
+//            anotherBox.add(fruit);
+//        }
+//        box.clear();
+        anotherBox.box.addAll(this.box);
         box.clear();
     }
 
