@@ -2,10 +2,11 @@ package ru.geekbrains.fruitbox.app;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class FruitBox<T extends Fruit> {
     private Class<?> boxType;
-    private ArrayList<T> box;
+    private List<T> box;
 
     public FruitBox(T... fruits) {
         this.boxType = fruits.getClass().getComponentType();
